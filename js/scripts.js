@@ -16,18 +16,17 @@ $(document).ready(function() {
       inputEndNumber = 1;
     }
     else {
-      inputEndNumber = 100;
+      inputEndNumber = 55;
     }
 
-  console.log("F/B End #: ",inputEndNumber);
-
-  var inputTime = parseInt($("#userTime").val()) * 14; //14-56
-  var inputStyle = parseInt($("#userStyle").val()) * 14; //14-56
+  var inputTime = parseInt($("#userTime").val()) * 18 + 1; //14-56
+  var inputStyle = parseInt($("#userStyle").val()) * 18 + 1; //14-56
 
   var inputColor = $("#userColor").val();
   var amountOfBlue = inputColor.charCodeAt(5) - 47; //1-55
 
-  var suggestionNumber = inputTime + inputStyle + amountOfBlue
+  var suggestionNumber = (inputTime + inputStyle + amountOfBlue + inputEndNumber) / 4;
+  console.log(suggestionNumber)
 
   // JAVASCRIPT LISTENER TEST
   $(".inputName").text(inputName);
