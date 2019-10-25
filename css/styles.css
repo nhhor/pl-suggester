@@ -2,23 +2,27 @@ body {
   background-image: url("../img/chevrons.png");
 }
 
+h1 {
+  text-align: center;
+}
+
 .container {
   border-radius: 5%;
   border: inset 5px;
   border-color: rgba(0, 0, 0, .75);
-  background-color: rgba(255, 255, 255, .95);
+  background-color: rgba(255, 255, 255, .92);
 }
 
 .survey {
     border-radius: 5%;
     border: inset 5px;
     border-color: rgba(255, 128, 128, .75);
-    background-color: rgba(255, 255, 255, .95);
+    background-color: rgba(255, 255, 255, .46);
 }
 
 .results {
     border-radius: 5%;
     border: inset 5px;
     border-color: rgba(128, 255, 255, .75);
-    background-color: rgba(255, 255, 255, .95);
+    background-color: rgba(255, 255, 255, .46);
 }
