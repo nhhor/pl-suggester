@@ -35,12 +35,12 @@ $(document).ready(function() {
   $(".inputStyle").text(inputStyle);
   $(".inputColor").text(inputColor);
   $(".amountOfBlue").text(amountOfBlue);
-  // console.log("The amount of Blue is: ",amountOfBlue);
+  $(".suggestionNumber").text(suggestionNumber);
 
   // HIDE ALL LANGUAGE SUGGESTIONS ON SUBMIT (TO RESET)
   $(".language1, .language2, .language3, .language4, .language5").hide();
 
-
+  $(".results").slideDown(500);
 
   // BRANCHING
   if (suggestionNumber <= 50) {
@@ -49,7 +49,7 @@ $(document).ready(function() {
   else if (suggestionNumber <=100) {
     $(".language2").show();
   }
-  else if (suggestionNumber <=150) {
+  else if (suggestionNumber <=161) {
     $(".language3").show();
   }
   else if (suggestionNumber <=200) {
@@ -59,21 +59,7 @@ $(document).ready(function() {
     $(".language5").show();
   }
 
-  $(".dataSet").slideDown();
-
-
-
-
-
-  // NOTES ON var inputAmountOfBlue:
-  // takes the 5th character of a hex code (first blue#) and charCodeAt to provide a specific 'character number' (0-9 & a-f) -47 (to normalize), then dividing possible (16) results into four ranges for branching as follows:
-  // A: 1, 2, 3, 4
-  // B: 5, 6, 7, 8
-  // C: 9, 10, 50, 51
-  // D: 52, 53, 54, 55
-
-  // NOTES ON var inputTime & inputStyle:
-  // range of 4, between 14 and 56.
+  $(".dataSet").slideDown(1000);
 
 
 
