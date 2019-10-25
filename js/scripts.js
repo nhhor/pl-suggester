@@ -16,7 +16,7 @@ $(document).ready(function() {
       inputEndNumber = 1;
     }
     else {
-      inputEndNumber = 55;
+      inputEndNumber = 117;
     }
 
   var inputTime = parseInt($("#userTime").val()) * 18 + 1; //14-56
@@ -25,7 +25,7 @@ $(document).ready(function() {
   var inputColor = $("#userColor").val();
   var amountOfBlue = inputColor.charCodeAt(5) - 47; //1-55
 
-  var suggestionNumber = (inputTime + inputStyle + amountOfBlue + inputEndNumber) / 4;
+  var suggestionNumber = ((inputTime + inputStyle + amountOfBlue) / 2 + inputEndNumber).toFixed(0);
   console.log(suggestionNumber)
 
   // JAVASCRIPT LISTENER TEST
@@ -43,16 +43,16 @@ $(document).ready(function() {
 
 
   // BRANCHING
-  if (amountOfBlue <= 4) {
+  if (suggestionNumber <= 50) {
     $(".language1").show();
   }
-  else if (amountOfBlue <=8) {
+  else if (suggestionNumber <=100) {
     $(".language2").show();
   }
-  else if (amountOfBlue <=51) {
+  else if (suggestionNumber <=150) {
     $(".language3").show();
   }
-  else if (amountOfBlue <=55) {
+  else if (suggestionNumber <=200) {
     $(".language4").show();
   }
   else {
