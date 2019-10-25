@@ -9,6 +9,9 @@ h1 {
 h5 {
   text-align: center;
 }
+img {
+  width: 100%;
+}
 
 .container {
   border-radius: 5%;
@@ -30,15 +33,16 @@ h5 {
   border: inset 5px;
   border-color: rgba(128, 255, 255, .75);
   background-color: rgba(255, 255, 255, .46);
+  padding-top: 2%;
 }
 
 .data{
   /* border-radius: 5%; */
   border: groove 5px;
-  border-color: rgba(0, 0, 0, .75);
+  border-color: rgba(0, 128, 0, .75);
   background-color: rgba(0, 0, 0, .75);
   font-family: monospace;
-  color: beige;
+  color: rgba(64, 128, 64, 1);
   text-align: center;
   font-size: 12px;
 }
@@ -73,4 +77,8 @@ h5 {
 
 .language1, .language2, .language3, .language4, .language5 {
   display: none;
+}
+
+.inputName {
+  font-weight: bold;
 }
