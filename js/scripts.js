@@ -8,8 +8,10 @@ $(document).ready(function() {
   $("form#survey").submit(function(event) {
 
 // MOVE COL's OVER ANIMATION:
-    $("#moveOver").removeClass("col-md-12").fadeOut(1000);
-    $("#moveOver").addClass("col-md-7").fadeIn(1000);
+    $(".results").fadeOut(750);
+    $(".dataSet").slideUp(500);
+    $("#moveOver").removeClass("col-md-12").slideUp(500);
+    $("#moveOver").addClass("col-md-7").slideDown(500);
 
 
     // VARIABLES
@@ -46,7 +48,6 @@ $(document).ready(function() {
   // HIDE ALL LANGUAGE SUGGESTIONS ON SUBMIT (TO RESET)
   $(".language1, .language2, .language3, .language4, .language5").hide();
 
-  $(".results").slideDown(500);
 
   // BRANCHING
   if (suggestionNumber <= 50) {
@@ -65,7 +66,9 @@ $(document).ready(function() {
     $(".language5").show();
   }
 
-  $(".dataSet").slideDown(1000);
+  $(".results").fadeIn(750);
+
+  $(".dataSet").slideDown(1500);
 
 
 
