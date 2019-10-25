@@ -1,23 +1,23 @@
 // Business logic:
 
 
+// I feel a bit uncertain if any of the logic below should be made business, instead... Please advise.
+
 
 // user interface logic:
 
 $(document).ready(function() {
   $("form#survey").submit(function(event) {
 
-    // MOVE COL's OVER ANIMATION:
+    // INITIAL ANIMATIONS
     $(".language1, .language2, .language3, .language4, .language5").hide();
     $(".results").fadeOut(750);
     $(".dataSet").slideUp(500);
     $("#moveOver").removeClass("col-md-12").slideUp(500);
     $("#moveOver").addClass("col-md-7").slideDown(500);
 
-
     // VARIABLES
     var inputName = $("#userName").val();
-
     var inputEnd = $("input:radio[name=userEnd]:checked").val();
     var inputEndNumber;
 
@@ -30,10 +30,8 @@ $(document).ready(function() {
 
     var inputTime = parseInt($("#userTime").val()) * 18 + 1; //14-56
     var inputStyle = parseInt($("#userStyle").val()) * 18 + 1; //14-56
-
     var inputColor = $("#userColor").val();
     var amountOfBlue = inputColor.charCodeAt(5) - 47; //1-55
-
     var suggestionNumber = ((inputTime + inputStyle + amountOfBlue) / 2 + inputEndNumber).toFixed(0);
 
     // JAVASCRIPT LISTENER TEST
@@ -62,12 +60,10 @@ $(document).ready(function() {
       $(".language5").show();
     }
 
+    // FINAL ANIMATIONS
     $(".results").fadeIn(750);
-
     $(".dataSet").slideDown(1500);
-
-
-
+    $("body").css("background-color",inputColor);
 
     event.preventDefault();
   });
