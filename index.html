@@ -18,20 +18,40 @@
     <div class="row body">
       <div class="col-md-7 survey">
         <h5>Please complete this short survey so we can suggest the programming language that is the right fit for you!</h5>
+        <hr>
         <form id="formSurvey">
 
+          <!-- QUESTION ONE -->
           <div class="form-group row">
-            <label for="userName" class="col-lg-4 col-form-label">What is your name?</label>
+            <label for="userName" class="col-lg-4 col-form-label-sm">What is your name?</label>
             <div class="col-lg-8">
-              <input id="userName" class="form-control form-control" type="text" placeholder="Name" required>
+              <input id="userName" class="form-control form-control-sm" type="text" placeholder="Name" required>
+            </div>
+          </div>
+
+          <!-- QUESTION TWO -->
+          <div class="form-group row">
+            <label for="userEnd" class="col-lg-4 col-form-label-sm">What type of logic do you prefer?</label>
+            <div class="col-lg-8">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="userEnd" id="userEndFront" value="userEndFront">
+                <label class="form-check-label" for="userEndFront">Front-End (user) logic.</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="userEnd" id="userEndBack" value="userEndFront">
+                <label class="form-check-label" for="userEndFront">Back-End (business) logic.</label>
+              </div>
             </div>
           </div>
 
 
+          <!-- SUBMIT BUTTON -->
+          <div class="form-group row">
+            <div class="col-lg-12">
+              <button id="formSubmit" class="btn btn-danger" type="submit">Submit</button>
+            </div>
+          </div>
 
-
-
-          <button id="formSubmit" class="btn btn-danger" type="submit">Submit</button>
         </form>
       </div>
       <div class="col-md-5 results">
