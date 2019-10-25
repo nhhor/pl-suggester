@@ -1,6 +1,8 @@
 body {
   background-image: url("../img/chevrons.png");
-}
+  background-size: 750px;
+  background-color: #374d2f;
+  }
 
 h1 {
   text-align: center;
@@ -10,21 +12,25 @@ h5 {
   text-align: center;
 }
 img {
-  width: 100%;
+  width: 60%;
+}
+
+.results, img{
+  text-align: center;
 }
 
 .container {
   border-radius: 5%;
   border: inset 5px;
   border-color: rgba(0, 0, 0, .75);
-  background-color: rgba(255, 255, 255, .92);
+  background-color: rgba(255, 255, 255, .80);
 }
 
 .survey {
   border-radius: 5%;
   border: outset 5px;
   border-color: rgba(255, 128, 128, .75);
-  background-color: rgba(255, 255, 255, .46);
+  background-color: rgba(255, 255, 255, .50);
 }
 
 .results {
@@ -32,7 +38,7 @@ img {
   border-radius: 5%;
   border: inset 5px;
   border-color: rgba(128, 255, 255, .75);
-  background-color: rgba(255, 255, 255, .46);
+  background-color: rgba(255, 255, 255, .50);
   padding-top: 2%;
 }
 
@@ -42,7 +48,7 @@ img {
   border-color: rgba(0, 128, 0, .75);
   background-color: rgba(0, 0, 0, .75);
   font-family: monospace;
-  color: rgba(64, 128, 64, 1);
+  color: rgba(0, 200, 0, 1);
   text-align: center;
   font-size: 12px;
 }
@@ -81,4 +87,8 @@ img {
 
 .inputName {
   font-weight: bold;
+}
+
+.footer {
+  text-align: center;
 }
