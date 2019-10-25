@@ -7,8 +7,9 @@
 $(document).ready(function() {
   $("form#survey").submit(function(event) {
 
-    $("#moveOver").removeClass("col-md-12").fadeIn();
-    $("#moveOver").addClass("col-md-7").fadeIn();
+// MOVE COL's OVER ANIMATION:
+    $("#moveOver").removeClass("col-md-12").fadeOut(1000);
+    $("#moveOver").addClass("col-md-7").fadeIn(1000);
 
 
     // VARIABLES
