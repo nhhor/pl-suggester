@@ -2,7 +2,6 @@
 
 
 
-
 // user interface logic:
 
 $(document).ready(function() {
@@ -12,7 +11,9 @@ $(document).ready(function() {
     var inputEnd = $("input:radio[name=userEnd]:checked").val();
     var inputTime = parseInt($("#userTime").val());
     var inputStyle = parseInt($("#userStyle").val());
+
     var inputColor = $("#userColor").val();
+    var inputAmountOfBlue = inputColor.charCodeAt(5) - 47;
 
     // START JAVASCRIPT LISTENER TEST
     $(".inputName").text(inputName);
@@ -20,6 +21,9 @@ $(document).ready(function() {
     $(".inputTime").text(inputTime);
     $(".inputStyle").text(inputStyle);
     $(".inputColor").text(inputColor);
+
+    $(".inputAmountOfBlue").text(inputAmountOfBlue);
+
     // START JAVASCRIPT LISTENER TEST
 
     event.preventDefault();
