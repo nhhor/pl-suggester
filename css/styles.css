@@ -40,5 +40,8 @@ h1 {
 .floatRight {
   float: right;
   margin-bottom: 0px;
+}
 
+.language1, .language2, .language3, .language4, .language5 {
+  display: none;
 }
