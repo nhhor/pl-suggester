@@ -6,6 +6,11 @@
 
 $(document).ready(function() {
   $("form#survey").submit(function(event) {
+
+    $("#moveOver").toggleClass("col-md-12").fadeIn();
+    $("#moveOver").toggleClass("col-md-7").fadeIn();
+
+
     // VARIABLES
     var inputName = $("#userName").val();
 
