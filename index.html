@@ -19,7 +19,7 @@
       <div class="col-md-7 survey">
         <h5>Please complete this short survey so we can suggest the programming language that is the right fit for you!</h5>
         <hr>
-        <form id="formSurvey">
+        <form id="survey">
 
           <!-- QUESTION ONE -->
           <div class="form-group row">
@@ -38,7 +38,7 @@
                 <label class="form-check-label" for="userEndFront">Front-End (user) logic.</label>
               </div>
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="userEnd" id="userEndBack" value="userEndFront">
+                <input class="form-check-input" type="radio" name="userEnd" id="userEndBack" value="userEndBack">
                 <label class="form-check-label" for="userEndFront">Back-End (business) logic.</label>
               </div>
             </div>
@@ -54,9 +54,23 @@
             </div>
           </div>
 
+          <!-- QUESTION FOUR -->
+          <div class="form-group row">
+            <label for="userStyle" class="col-lg-4 col-form-label-sm">Do you want to work with something more tried-and-true, or more cutting-edge?</label>
+            <div class="col-lg-8">
+              <p class="floatLeft col-form-label-sm"><strong>[</strong> Stable -</p>
+              <p class="floatRight col-form-label-sm">- Cutting edge <strong>]</strong></p>
+              <input type="range" class="custom-range" min="0" max="10" id="userStyle">
+            </div>
+          </div>
 
-
-
+          <!-- QUESTION FIVE -->
+          <div class="form-group row">
+            <label for="userColor" class="col-lg-4 col-form-label-sm">What is your favorite color?</label>
+            <div class="col-lg-8">
+              <input type="color" value="#00ff00" id="userColor">
+            </div>
+          </div>
 
           <!-- SUBMIT BUTTON -->
           <div class="form-group row">
@@ -68,7 +82,17 @@
         </form>
       </div>
       <div class="col-md-5 results">
-        <p>RESULTS PLACEHOLDER</p>
+        <h5>Results</h5>
+        <hr>
+
+        <!-- START JAVASCRIPT LISTENER TEST -->
+        <p>The user said: <span class="inputName"></span></p>
+        <p>The user said: <span class="inputEnd"></span></p>
+        <p>The user said: <span class="inputTime"></span></p>
+        <p>The user said: <span class="inputStyle"></span></p>
+        <p>The user said: <span class="inputColor"></span></p>
+        <!-- END JAVASCRIPT LISTENER TEST -->
+
       </div>
     </div>
     <div class="row footer">
