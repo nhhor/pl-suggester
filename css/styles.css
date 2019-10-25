@@ -15,7 +15,7 @@ h1 {
 
 .survey {
   border-radius: 5%;
-  border: inset 5px;
+  border: outset 5px;
   border-color: rgba(255, 128, 128, .75);
   background-color: rgba(255, 255, 255, .46);
 }
@@ -25,6 +25,30 @@ h1 {
   border: inset 5px;
   border-color: rgba(128, 255, 255, .75);
   background-color: rgba(255, 255, 255, .46);
+}
+
+.data{
+  border-radius: 5%;
+  border: double 5px;
+  border-color: rgba(0, 0, 0, .75);
+  background-color: rgba(0, 0, 0, .75);
+  font-family: monospace;
+  color: beige;
+  text-align: center;
+  font-size: 12px;
+}
+
+ .data P {
+   margin-top: auto;
+   margin-bottom: auto;
+ }
+
+.dataSet {
+  display: none;
+}
+
+.emphasis {
+  text-decoration: underline;
 }
 
 .custom-range {
